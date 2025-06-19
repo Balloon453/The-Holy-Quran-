@@ -1,1 +1,17 @@
-
+{
+  "name": "تطبيق القرآن الكريم",
+  "short_name": "القرآن",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e293b",
+  "description": "تطبيق ويب لقراءة القرآن الكريم كاملًا بدون إنترنت",
+  "lang": "ar",
+  "icons": [
+    {
+      "src": "assets/icon-512_optimized.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
