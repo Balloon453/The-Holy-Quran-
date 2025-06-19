@@ -1,1 +1,50 @@
+/* إعداد الخط */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafb;
+  color: #111827;
+  transition: background-color 0.3s, color 0.3s;
+}
 
+/* الوضع الليلي */
+body.dark {
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #1e293b;
+  color: #fff;
+  border-bottom: 4px solid #64748b;
+}
+
+header img {
+  display: block;
+  margin: 0 auto 1rem;
+  max-width: 120px;
+  border-radius: 12px;
+}
+
+main {
+  padding: 2rem;
+  line-height: 1.8;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* زر تغيير الوضع */
+.toggle-theme {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  background-color: #64748b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
