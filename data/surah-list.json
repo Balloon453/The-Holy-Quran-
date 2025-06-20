@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "الفاتحة",
+    "aya_count": 7,
+    "start_page": 1
+  },
+  {
+    "id": 2,
+    "name": "البقرة",
+    "aya_count": 286,
+    "start_page": 2
+  },
+  {
+    "id": 3,
+    "name": "آل عمران",
+    "aya_count": 200,
+    "start_page": 50
+  },
+  {
+    "id": 4,
+    "name": "النساء",
+    "aya_count": 176,
+    "start_page": 77
+  },
+  {
+    "id": 5,
+    "name": "المائدة",
+    "aya_count": 120,
+    "start_page": 106
+  }
+]
