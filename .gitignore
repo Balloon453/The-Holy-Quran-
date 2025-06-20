@@ -1,0 +1,16 @@
+# ملفات Node.js (لو استخدمت npm لاحقًا)
+node_modules/
+.env
+
+# ملفات النظام
+.DS_Store
+Thumbs.db
+
+# ملفات الصور والميديا الثقيلة
+*.psd
+*.xcf
+*.bak
+
+# ملفات لا نحتاجها في Git
+*.log
+*.zip
