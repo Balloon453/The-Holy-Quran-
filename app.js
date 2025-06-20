@@ -1,20 +1,20 @@
-// حفظ تفضيل الوضع من Local Storage
-const savedTheme = localStorage.getItem("theme");
-if (savedTheme === "dark") {
-  document.body.classList.add("dark");
-}
+// عرض سورة الفاتحة (تجربة أولية فقط)
+fetch("data/quran.json")
+  .then(response => response.json())
+  .then(quran => {
+    const surah = quran["1"]; // سورة الفاتحة
+    const container = document.createElement("div");
+    container.innerHTML = `<h2>${surah.name}</h2>`;
 
-// إنشاء زر تغيير الوضع الليلي/النهاري
-const themeToggleBtn = document.createElement("button");
-themeToggleBtn.textContent = "تغيير الوضع";
-themeToggleBtn.className = "toggle-theme";
-document.body.appendChild(themeToggleBtn);
+    surah.ayahs.forEach((ayah, index) => {
+      const ayahElement = document.createElement("p");
+      ayahElement.textContent = `${index + 1} - ${ayah}`;
+      ayahElement.style.margin = "10px 0";
+      container.appendChild(ayahElement);
+    });
 
-// تبديل الوضع عند الضغط
-themeToggleBtn.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-
-  // حفظ التفضيل
-  const newTheme = document.body.classList.contains("dark") ? "dark" : "light";
-  localStorage.setItem("theme", newTheme);
-});
+    document.body.appendChild(container);
+  })
+  .catch(error => {
+    console.error("حدث خطأ أثناء تحميل القرآن:", error);
+  });
